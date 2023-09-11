@@ -57,6 +57,15 @@
         "settings": {
           "bundleName": "project1.i18n.i18n"
         }
+      },
+      "": {
+          "dataSource": "mainService",
+          "preload": true,
+          "settings": {}
+      },
+      "Request": {
+          "type": "sap.ui.model.json.JSONModel",
+          "uri": "RequestOrder.json"
       }
     },
     "resources": {
@@ -78,28 +87,28 @@
       },
       "routes": [
         {
-          "name": "Routeapp",
-          "pattern": ":?query:",
+          "name": "Request",
+          "pattern": "",
           "target": [
-            "Targetapp"
+              "Request"
           ]
         }
       ],
       "targets": {
-        "Targetapp": {
+        "Request": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "app",
-          "viewName": "app"
+          "viewId": "RequestPage",
+          "viewName": "Request"
         }
       }
     },
     "rootView": {
-      "viewName": "project1.view.App",
+      "viewName": "project1.view.app",
       "type": "XML",
       "async": true,
-      "id": "App"
+      "id": "app"
     }
   }
 }

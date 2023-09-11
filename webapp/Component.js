@@ -13,7 +13,7 @@ function (UIComponent, JSONModel, ResourceModel, Device, models) {
            manifest: "json",
            "interfaces": ["sap.ui.core.IAsyncContentCreation"],
            "rootView": {
-            "viewName": "project1.view.App",
+            "viewName": "project1.view.app",
             "type": "XML",
             /*"async": true, // implicitly set via the sap.ui.core.IAsyncContentCreation interface*/
             "id": "app"
